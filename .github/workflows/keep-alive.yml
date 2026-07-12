@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Ping the app to keep it awake
         run: |
-          curl -sSL "https://resume-reviewer-assistant-jay-bhatt.streamlit.app/" -o /dev/null -w "HTTP %{http_code}\n"
+          curl -sS "https://resume-reviewer-assistant-jay-bhatt.streamlit.app/" -o /dev/null -w "HTTP %{http_code}\n" || true
